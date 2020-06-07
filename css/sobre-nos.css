@@ -1,0 +1,584 @@
+/*----------Font nativa convertida em webfont---------------*/
+
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('../vendors/fonts/bebas-neue/BebasNeue-Regular.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src:  url('../vendors/fonts/bebas-neue/BebasNeue-Regular.otf')  format('otf'),
+	    url(../vendors/fonts/bebas-neue/BebasNeue-Regular.woff) format('woff'), 
+	    url('../vendors/fonts/bebas-neue/BebasNeue-Regular.ttf')  format('ttf'), 
+	    url('../vendors/fonts/bebas-neue/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../vendors/fonts/open-sans/OpenSans.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+  url('../vendors/fonts/open-sans/OpenSans.woff') format('woff'), 
+url('../vendors/fonts/open-sans/OpenSans.ttf')  format('ttf'), 
+url('../vendors/fonts/open-sans/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----------------------CORES---------------------
+
+PRETO BASSO #202020
+ROSA #f45d97
+VERDE #54d0da
+CINZENTO #f6f7fb ]
+*/
+
+
+/* CONFIGURAÇÕES BÁSICAS */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    background-color: white;
+    color: black;
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* COMPONENTES ÚTEIS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1220px;
+    margin: 0 auto;
+    border: 0px solid white;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ----- HEADINGS (TÍTULOS) ----- */
+h1,
+h2,
+h3 {
+    font-weight: 300;		
+    text-transform: uppercase;
+}
+
+
+h1 { /*h1 USADO PARA TÍTULO GRANDE NO BANNER*/
+    margin-top: 0;
+    margin-bottom: .1em;
+    font-size: 320%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-family: "BebasNeue-Regular";
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 { /*h3 USADO PARA O SUBTÍTULO  NO BANNER*/
+    font-size: 100%;
+    margin-bottom: 1em;
+    opacity: 1;
+    font-weight: bold;
+}
+h4 { /*H4 USADO PARA O TÍTULO DE QUALQUER SECÇÃO*/
+	margin-bottom: 1em;
+	font-size: 180%;
+	text-transform: uppercase;
+}
+
+.devs-ao {
+    font-family: "BebasNeue-Regular";
+    font-size: 120%;
+}
+
+p {
+    font-size: 90%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/* ----- PARAGRAPHS ----- */
+
+
+
+.logo {
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: -15px;
+    margin-left: -.8em;
+}
+.logo-span {
+	margin-top: 10px;
+	font-size: 150%;
+	color: white;
+	font-family: 'BebasNeue-Regular';
+}
+
+
+
+/* Main navi */
+nav {
+	width: 100%;
+	background: #202020;
+	height: 60px;
+	padding-top: .6em;
+	border-bottom: 1px solid rgba(255,255,255,.9);
+}
+.nav-direita {
+	display: flex;
+	justify-content: center;
+	border: 0px solid white;
+	width: 635px;
+	float: right;
+}
+.main-nav {
+    list-style: none;
+    float: right;
+    display: inline;
+    padding-top: .2em;
+} 
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 32px;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 65%;
+    border-bottom: 4px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 4px solid #f45d97;
+}
+
+.activa:link,
+.activa:visited {
+	color: #54d0da;
+}
+
+.main-menu-serach:link,
+.main-menu-serach:visited {
+    border-bottom: 2px solid #f45d97; 
+    border-bottom: 2px solid #f45d97;
+}
+
+.main-nav i {
+    font-size: 140%;
+    padding: .6em .9em;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.1);
+    color: #54d0da;
+}
+/*-----------BOTÕES ----------*/
+.btn-primario,
+.btn-secundario{
+	text-decoration: none;
+	text-align: center;
+	padding: .6em 1em .6em 1em;
+	margin-right: 1em;
+	border: 0;
+	font-size: 75%;
+	border-radius: 10px;
+	width: 130px;
+	display: inline;
+}
+
+.btn-primario {
+	background: #f45d97;
+	color: white;
+	border: 1px solid #f45d97;
+}
+.btn-secundario {
+	background: #54d0da;
+	color: #202020; 
+	border: 1px solid #54d0da;
+}
+.btn-entrar:link, 
+.btn-entrar:active{
+	text-decoration: none;
+	text-align: center;
+	word-spacing: 8px;
+	padding: .7em;
+	background: #f45d97;
+	color: white;
+	border: 0;
+	font-size: 70%;
+	border-radius: 10px;
+	width: 100px;
+	margin-left: 2em;
+}
+.btn-entrar:hover, 
+.btn-entrar:visited,
+.btn-primario:hover,
+.btn-primaario:visited,
+.btn-pesquisar:hover,
+.btn-pesquisar:visited {
+	color: white;
+    background: rgba(244,53,151,0.8);
+}
+.btn-secundario:hover,
+.btn-secundario:visited {
+	color: #202020;
+	background: rgba(84,208,218,0.8);
+}
+
+/*--------------banner-------------*/
+.banner {
+ background: white;
+ height: 95vh;
+}
+.banner img {
+    width: 60%;
+    margin-left: -3.5em;
+}
+.banner p {
+    font-size: 8=90%;
+}
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+.flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.flex-1-of-2 {
+    border-radius: 10px;
+}
+.contexto-1 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+    background: #f6f7fb;
+}
+.contexto-1 img {
+    margin-top: -1em;
+    width: 60%;
+    margin-left: -4em;
+}
+.contexto-2 {
+    width: 50%;
+      padding: 1em;
+}
+.contexto-2 span{
+    font-size: 80%;
+}
+
+
+
+.nossa-missao {
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+    width: 100%;
+}
+.missao {
+    font-style: italic;
+    width: 115%;
+    padding: 1em;
+    font-weight: bold;
+    margin-bottom: 2.5em;
+}
+
+/*------------------Nossos serviços------------------*/
+.nossos-servicos {
+    margin-top: -5em;
+    padding-top: 4em;
+    padding-bottom: 8em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url('../imagens/nuvem.png');
+
+}
+.nossos-servicos img {
+    width: 40%;
+
+}
+
+.servicos {
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 200px;
+    text-align: center;
+    background: ;
+    margin-right: 1em;
+    border: 3px solid #202020;
+
+}
+/*-----------------o nosso team------------------*/
+.o-nosso-team {
+    padding-top: 7em;
+   
+}
+
+/*=----------------CONTACTO---------------------*/
+.contacto {
+    margin-top: -1.4em;
+    font-size: 90%;
+    background:  #f6f7fb;
+}
+.contacto .row {
+    margin-bottom: 1em;
+}
+.form-contato {
+    width: 100%;
+}
+.flex-form {
+    width: 60%;
+}
+.form-contacto input[type=text], input[type=email]{
+    background: white;
+    padding: .7em;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 2em;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0,0,0,.3);
+    width: 160%;
+}
+.form-contacto select {
+    background: white;
+    padding: .7em;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 2em;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0,0,0,.3);
+    width: 266.5%;
+}
+.form-contacto textarea {
+    background: white;
+    padding: .7em;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 2em;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0,0,0,.3);
+    width: 160%;
+    height: 170px;
+}
+.form-contacto .label{
+    width: 36%;
+}
+.form-contacto input[type=submit] {
+
+    background: #f45d97;
+    color: white;
+    border: 1px solid #f45d97;
+    text-align: center;
+    padding: .8em 1em .8em 1em;
+    margin-right: 1em;
+    font-size: 80%;
+    border-radius: 10px;
+    width: 130px;
+}
+.form-contacto input[type=submit]:hover {
+    color: white;
+    background: rgba(244,53,151,0.8);
+}
+
+.form-contacto .checkbox-span {
+    margin-left: 1em;
+    font-size: 80%;
+}
+.contacto-redes-sociais {
+    font-size: 160%;
+    list-style: none;
+    display: flex;
+}
+
+.contacto-redes-sociais li {
+    margin-right: 2em;
+
+}
+.contacto-redes-sociais a:link,
+.contacto-redes-sociais a:visited{
+    color: #202020;
+}
+.contacto-redes-sociais .facebook:hover,
+.contacto-redes-sociais .facebook:active{
+    color: #3b5998;
+}
+.contacto-redes-sociais .whatsapp:hover,
+.contacto-redes-sociais .whatsapp:active{
+    color: #128C7E;
+}
+.contacto-redes-sociais .github:hover,
+.contacto-redes-sociais .github:active{
+    color: #24292e;
+}
+.contacto-numeros {
+    margin-top: 4em;
+    list-style: none;
+}
+.contacto-numeros li {
+    margin-bottom: .5em;
+}
+
+.contacto-numeros  i {
+    margin-right: 1em;
+}
+/*--------------------footer--------------------*/
+footer{
+   padding-top: 3em;
+    font-size: 80%;
+    background: #202020;
+    color: rgba(255,255,255,.7);
+    line-height: 24px;
+}
+.footer-flex-container {
+    display: flex;
+
+}
+.footer-logo {
+    width: 28%;
+
+}
+.footer-logo img {
+    width: 120%;
+    margin-left: -4.2em;
+    margin-top: 2em;
+}
+.footer-informacao {
+    margin-right: 2em; 
+    float: left;
+    width:20%;
+    display: inline;
+    padding-top: 2em;
+}
+.footer-informacao p{
+    font-size: 83%;
+}
+.footer-informacao div {
+    margin-bottom: 4em;
+}
+.footer-informacao i{
+    font-size: 140%;
+    margin-left: .5em;
+}
+
+footer h5{
+    margin-bottom: 1em;
+    color: #54d0da;
+}
+
+.footer-menu {
+    padding-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.footer-menu h5 i {
+    font-size: 140%;
+    margin-left: .5em;
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin-left: 3em;
+}
+
+.footer-menu ul li i {
+    color:  #54d0da;
+    margin-right: 2em;
+}
+
+.subscreva {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4em;
+}
+.subscreva button {
+    border: 0;
+    padding: 1em;
+    border-radius: 10px;
+    background:  #f45d97;
+    color: white;
+    font-size: 80%;
+}
+.redes-socias {
+    border-top: 1px solid  #54d0da;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em 0;
+
+}
+
+.redes-socias i {
+    margin-left: 2em;
+    font-size: 160%;
+    color:  #54d0da;
+}
+footer input {
+    padding: .7em;
+    border-radius: 10px;
+    border: 0;
+    margin-right: 2em;
+    width: 169px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0,0,0,.3);
+}
