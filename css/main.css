@@ -120,9 +120,10 @@ h2 {
 }
 
 h3 { /*h3 USADO PARA O SUBTÍTULO  NO BANNER*/
-    font-size: 100%;
+	font-size: 100%;
+	color: lightgrey;
     margin-bottom: 1em;
-    opacity: .8;
+    /* opacity: .8; */
 }
 h4 { /*H4 USADO PARA O TÍTULO DE QUALQUER SECÇÃO*/
 	margin-bottom: 1em;
@@ -180,8 +181,9 @@ header {
 
 /* Main navi */
 nav {
+	position: fixed;
 	width: 100%;
-	background: #202020;
+	background:black;
 	height: 60px;
 	padding-top: .6em;
 	border-bottom: 1px solid rgba(255,255,255,.9);
@@ -279,7 +281,7 @@ nav {
 	width: 100px;
 	margin-left: 2em;
 }
-.btn-entrar:hover, 
+.btn-entrar:hover,
 .btn-entrar:visited,
 .btn-primario:hover,
 .btn-primaario:visited,
@@ -407,7 +409,7 @@ input {
 }
 .categoria-popular ul  li .texto-pequeno {
 	font-size: 70%;
-	opacity: .7;
+	/* opacity: .7; */
 	color: black;
 }
 
@@ -450,7 +452,7 @@ input {
 .melhor-suporte p {
 	line-height: 30px;
 	font-size: 90%;
-	opacity: .8;
+	/* opacity: .8; */
 	margin-top: .5em;
 	margin-bottom: 2em;
 }
@@ -463,32 +465,31 @@ input {
 }
 .flex-box-1-of-2-img{
 	width: 90%;
-	opacity: .5;
+	
 	margin: -3em 0px 0px 7em;
 
 }
 
-
 .flex-box-1-of-2 .btn-secundario {
-	margin-top: 92px;
+	margin-top: 100px;
 }
 
 /*-----------------Tudo preparado-----------------*/
 .tudo-preparado {
-	padding-top:6em;
+	padding-top:10em;
 	background: #f6f7fb ;
 	padding-bottom: 7em;
 
 }
 .tudo-preparado .flex-box-1-of-2-img {
 	width: 90%;
-	opacity: 1;
+	/* opacity: 1; */
 	margin-top: 1em;
 }
 .tudo-preparado p {
 	line-height: 30px;
 	font-size: 80%;
-	opacity: .8;
+	/* opacity: .8; */
 	margin-top: .5em;
 	margin-bottom: 2em;
 }
@@ -524,14 +525,12 @@ input {
     font-size: 600%;
     color: #54d0da;
 }
-.feature-item{
-	
-}
+
 
 .features p {
 	line-height: 30px;
 	font-size: 80%;
-	opacity: .8;
+	/* opacity: .8; */
 	margin-top: .5em;
 	margin-bottom: 2em;
 }
@@ -580,10 +579,10 @@ blockquote {
     padding: 2%;
     font-style: italic;
     line-height: 145%;
-    position: relative;
+    /* position: relative; */
     margin-top: 40px;
     font-size: 80%;
-    color: rgba(255,255,255,.7);
+    /* color: rgba(255,255,255,.7); */
   
  
 }
@@ -592,10 +591,10 @@ blockquote:before {
     content: "\201C";
     font-size: 300%;
     display: block;
-    position: absolute;
+    /* position: relative; */
     top: -5px;
     left: -5px;
-    color: #54d0da;
+    /* color: #54d0da; */
 }
 
 .testemunhas-ul li cite {
@@ -630,7 +629,7 @@ blockquote:before {
 	
 }
 .oque-voce-esta-esperando p{
-	opacity: .7;
+	/* opacity: .7; */
 	width: 60%;
 	margin: 0 auto 2em auto;
 }
