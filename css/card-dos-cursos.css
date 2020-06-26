@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('../vendors/fonts/bebas-neue/BebasNeue-Regular.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src:  url('../vendors/fonts/bebas-neue/BebasNeue-Regular.otf')  format('otf'),
+	    url(../vendors/fonts/bebas-neue/BebasNeue-Regular.woff) format('woff'), 
+	    url('../vendors/fonts/bebas-neue/BebasNeue-Regular.ttf')  format('ttf'), 
+	    url('../vendors/fonts/bebas-neue/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../vendors/fonts/open-sans/OpenSans.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src:
+  url('../vendors/fonts/open-sans/OpenSans.woff') format('woff'), 
+url('../vendors/fonts/open-sans/OpenSans.ttf')  format('ttf'), 
+url('../vendors/fonts/open-sans/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----------------------CORES---------------------
+
+PRETO BASSO #202020
+ROSA #f45d97
+VERDE #54d0da
+CINZENTO #f6f7fb ]
+*/
+
+
+/* CONFIGURAÇÕES BÁSICAS */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f7fb;
+    color: black;
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------Cards-----------------*/
+
+.card-container {
+  background: white;
+  border: 0px solid black;
+  max-width: 260px;
+  height: 315px;
+  border-radius: 10px;
+  box-shadow:      
+      2px 2px 7px 0 rgba(0,0,0,.2),
+      -4px -3px 10px 0 white;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imagem-das-cards{
+  height:170px;
+  width: 100%;
+}
+
+.imagem-das-cards figure{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imagem-das-cards figcaption {
+  position: absolute;
+  top: 0;
+  left: .5em;
+}
+
+.imagem-das-cards figcaption .classificacao,
+.imagem-das-cards figcaption .classificacao2 {
+  font-size: 50%;
+  background: #f45d97;
+  color: white;
+  padding: .5em 1em .5em 1em;
+  box-shadow: 2px 1px 3px rgba(0,0,0,0.5);
+  border-radius: 50px;
+
+}
+
+.imagem-das-cards figcaption .classificacao2 {
+
+  background: #54d0da;
+  color: black;
+
+ 
+
+}
+.imagem-das-cards img{
+  object-fit: cover;
+  object-position: center;
+  height:100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.body-das-cards {
+  border: 0px solid black;
+  padding: .5em;
+}
+
+.body-das-cards h5{
+  text-transform: none;
+  margin-bottom: 1em;
+}
+
+.body-das-cards p{
+  font-size: 70%;
+  opacity: .7;
+}
+
+.footer-das-cards {
+  display: flex;
+  padding: .5em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.preco {
+  width: 70%;
+}
+
+.opcoes i {
+  margin-left: .7em;
+  font-size: 110%;
+  color: #f45d97;
+}
+
+
+/*--------------Responsividade------------*/
+
+@media screen and (max-width: 896px) {
+  .card-container { 
+      max-width: 245px;
+      height: 300px;
+  }
+
+  .imagem-das-cards{
+      height:160px;
+  }
+
+  .body-das-cards h5{
+      font-size: 75%;
+    }
+
+  .body-das-cards p{
+      font-size: 65%;
+  }
+  .preco {
+    width: 66%;
+    font-size: 80%;
+  }
+  .opcoes{
+    text-align: right;
+  }
+  .opcoes i {
+      font-size: 100%;
+      margin-left: .7em;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  body,html {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    flex-direction: column;
+    height: auto;
+  }
+  .card-container { 
+      display: block;
+      max-width: 445px;
+      height:320px;
+  }
+
+  .imagem-das-cards{
+      height:160px;
+  }
+
+  .body-das-cards h5{
+      font-size: 90%;
+      margin-bottom: 1.2em;
+    }
+
+  .body-das-cards p{
+      font-size: 70%;
+  }
+  .preco {
+      width: 75%;
+      font-size: 90%;
+  }
+
+  .opcoes i {
+      font-size: 120%;
+      margin-left: 1em;
+  }
+
+}
